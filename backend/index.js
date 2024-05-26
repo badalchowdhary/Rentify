@@ -27,6 +27,9 @@ app.use(cors({
 //Middleware to parse data
 app.use(express.json());
 
+app.get('/api/', (req, res) => {
+  res.send('Hello World');
+});
 app.use('/api/auth', authRoute);
 app.use('/api/buyer', buyerRoute);
 app.use('/api/seller', sellerRoute);
