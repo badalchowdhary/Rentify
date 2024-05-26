@@ -19,9 +19,9 @@ then(() => console.log("Conneted to MongoDB"))
 });
 
 //Enable CORS for all routes
-app.use(cors());
+// app.use(cors());
 app.use(cors({
-    origin: 'https://rentify-frontend-badal-chowdharys-projects.vercel.app/'
+    origin: 'https://rentify-frontend-badal-chowdharys-projects.vercel.app'
 }));
 
 //Middleware to parse data
